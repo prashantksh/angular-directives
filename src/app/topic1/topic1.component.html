@@ -1,0 +1,17 @@
+<h2
+  [appAttr]="cssString"
+  [dirProp1]="prop1"
+  [dirProp2]="prop2"
+  (dirEvent)="handler($event)"
+>
+  Working with Directives
+</h2>
+
+<hr />
+
+<h2 *appStrct="true">This Header has a structural directive applied</h2>
+
+<hr />
+<ng-template [appStrct]="true">
+  <h2>This is How Structural Directives Work in Angular Behind the Scene</h2>
+</ng-template>
